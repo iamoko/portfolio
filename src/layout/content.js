@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import About from "../pages/about";
 
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import Contact from "../pages/contact";
 
 import "../assets/style/animation.css";
@@ -30,7 +30,7 @@ function Content() {
           <Routes location={displayLocation}>
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<About />} />
+            <Route path="*" element={<Navigate to="/about" />} />
           </Routes>
         </div>
       </div>
