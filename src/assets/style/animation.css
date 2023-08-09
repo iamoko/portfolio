@@ -14,16 +14,18 @@ section {
 }
 
 .fadeIn {
-  animation: 0.5s fadeIn forwards;
+  animation: 0.3s fadeIn forwards;
+  -webkit-animation: 0.3s fadeIn forwards;
 }
 
 .fadeOut {
-  animation: 0.5s fadeOut forwards;
+  animation: 0.3s fadeOut forwards;
+  -webkit-animation: 0.3s fadeOut forwards;
 }
 
 @keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: 0.5;
     transform: translate(-20px, 0);
   }
   to {
@@ -39,6 +41,6 @@ section {
   }
   to {
     transform: translate(-20px, 0);
-    opacity: 0;
+    opacity: 0.5;
   }
 }

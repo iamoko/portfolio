@@ -17,16 +17,17 @@ function Content() {
 
   return (
     <div className="w-full md:py-5">
-      <div className="h-full main">
-        <div
-          className={`${transitionStage}`}
-          onAnimationEnd={() => {
-            if (transitionStage === "fadeOut") {
-              setTransistionStage("fadeIn");
-              setDisplayLocation(location);
-            }
-          }}
-        >
+      {/* <div className="h-full main"> */}
+      <div
+        className={`${transitionStage} h-full main py-3 pe-3`}
+        onAnimationEnd={() => {
+          if (transitionStage === "fadeOut") {
+            setTransistionStage("fadeIn");
+            setDisplayLocation(location);
+          }
+        }}
+      >
+        <div className="h-full overflow-y-auto">
           <Routes location={displayLocation}>
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
@@ -34,6 +35,7 @@ function Content() {
           </Routes>
         </div>
       </div>
+      {/* </div> */}
     </div>
   );
 }
