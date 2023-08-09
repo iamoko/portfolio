@@ -10,7 +10,7 @@ function Services() {
     icon_class = "text-4xl text-orange-500";
 
   return (
-    <div className="px-6">
+    <div className="sm:px-6">
       <div className="grid w-full grid-cols-2">
         <div className={`${cont_class}`}>
           <div className="flex justify-center">

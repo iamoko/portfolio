@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --bg-color: rgb(34, 34, 34);
+  --bg-color: #191919;
 }
 
 .main {
@@ -12,6 +12,10 @@
 
 .active {
   color: rgb(251 146 60);
+}
+
+.active-bg {
+  background-color: rgb(251 146 60);
 }
 
 p {

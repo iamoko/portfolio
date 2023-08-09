@@ -27,7 +27,6 @@ function Nav() {
         />
       ),
       label: "About",
-      isBorder: true,
     },
     {
       icon: (
@@ -36,7 +35,6 @@ function Nav() {
         />
       ),
       label: "Resume",
-      isBorder: true,
     },
     {
       icon: (
@@ -45,7 +43,6 @@ function Nav() {
         />
       ),
       label: "Works",
-      isBorder: true,
     },
     {
       icon: (
@@ -54,7 +51,6 @@ function Nav() {
         />
       ),
       label: "Contact",
-      isBorder: true,
     },
     {
       icon: (
@@ -63,27 +59,29 @@ function Nav() {
         />
       ),
       label: "Products",
-      isBorder: false,
     },
   ];
   return (
     <div>
-      <div className="md:px-4 px-2 pt-5 pb-0.5 md:rounded-sm main md:mt-4">
+      <div className="hidden sm:block pt-6 pb-0.5 md:rounded-3xl me-2 main md:mt-4">
         {_.map(menu, (m, i) => (
-          <Link to={`/${m.label.toLowerCase()}`} className="p-0 m-0" key={i}>
-            <div
-              className={`pb-2 mb-4 group ${
-                m.isBorder && "border-b-[0.5px]"
-              } border-slate-700 `}
-            >
+          <Link
+            to={`/${m.label.toLowerCase()}`}
+            className="p-0 m-0 px-9"
+            key={i}
+          >
+            <div className={`pb-4 mb-4 group border-slate-700 relative`}>
               <div className="flex justify-center">{m.icon}</div>
-              <p
+              <p className="absolute top-[-2px] z-20 left-14 active-bg text-sm px-3 text-black py-1 rounded-full font-medium hidden group-hover:block transition duration-200 transform">
+                {m.label}
+              </p>
+              {/* <p
                 className={`mt-2 text-xs text-center text-gray-100 transition duration-300 transform group-hover:text-orange-400 ${
                   active === m.label.toLowerCase() && "active"
                 }`}
               >
                 {m.label}
-              </p>
+              </p> */}
             </div>
           </Link>
         ))}
