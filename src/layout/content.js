@@ -22,7 +22,7 @@ function Content() {
     <div className="w-full md:py-5">
       {/* <div className="h-full main"> */}
       <div
-        className={`${transitionStage} h-full main py-3 pe-3 sm:rounded-e-md`}
+        className={`${transitionStage} h-full main py-3 pe-3 sm:rounded-e-3xl`}
         onAnimationEnd={() => {
           if (transitionStage === "fadeOut") {
             setTransistionStage("fadeIn");

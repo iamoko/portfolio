@@ -63,14 +63,14 @@ function Nav() {
   ];
   return (
     <div>
-      <div className="hidden sm:block pt-6 pb-0.5 md:rounded-3xl me-2 main md:mt-4">
+      <div className="hidden sm:block pt-3 pb-0.5 md:rounded-3xl me-2 main md:mt-4">
         {_.map(menu, (m, i) => (
           <Link
             to={`/${m.label.toLowerCase()}`}
             className="p-0 m-0 px-9"
             key={i}
           >
-            <div className={`pb-4 mb-4 group border-slate-700 relative`}>
+            <div className={`pb-4 group border-slate-700 relative`}>
               <div className="flex justify-center">{m.icon}</div>
               <p className="absolute top-[-2px] z-20 left-14 active-bg text-sm px-3 text-black py-1 rounded-full font-medium hidden group-hover:block transition duration-200 transform">
                 {m.label}

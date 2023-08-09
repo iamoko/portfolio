@@ -11,7 +11,7 @@ import {
   AiOutlineCloudDownload,
 } from "react-icons/ai";
 import { BsSendFill } from "react-icons/bs";
-import { name } from "../utils/contacts";
+import { personal } from "../utils/contacts";
 
 function Profile() {
   const images = [
@@ -51,7 +51,7 @@ function Profile() {
             </div>
             <div className="mt-4">
               <p className="text-4xl font-semibold text-center text-gray-200">
-                {name}
+                {personal.name}
               </p>
 
               <TypeAnimation
@@ -73,11 +73,19 @@ function Profile() {
                 repeat={Infinity}
               />
 
-              <div className="flex justify-center gap-5 mt-4">
-                <AiOutlineGithub className="text-xl text-white" />
-                <AiOutlineTwitter className="text-xl text-white" />
-                <AiFillLinkedin className="text-xl text-white" />
-                <AiOutlineWhatsApp className="text-xl text-white" />
+              <div className="flex justify-center gap-1 mt-4">
+                <a href={personal.github}>
+                  <AiOutlineGithub className="text-xl text-white hover:text-orange-400" />
+                </a>
+                <a href={personal.github}>
+                  <AiOutlineTwitter className="text-xl text-white hover:text-orange-400" />
+                </a>
+                <a href={personal.linkedIn}>
+                  <AiFillLinkedin className="text-xl text-white hover:text-orange-400" />
+                </a>
+                <a href={personal.whatsapp}>
+                  <AiOutlineWhatsApp className="text-xl text-white hover:text-orange-400" />
+                </a>
               </div>
             </div>
           </div>
@@ -92,9 +100,12 @@ function Profile() {
           <AiOutlineCloudDownload className="text-base font-semibold text-gray-200" />
         </div>
         <div className="flex items-center justify-center w-full gap-2 p-5 border-gray-700 border-s">
-          <p className="text-xs font-semibold text-gray-200 md:text-sm">
+          <a
+            href={`mailto:${personal.email}`}
+            className="text-xs font-semibold text-gray-200 md:text-sm"
+          >
             CONTACT ME
-          </p>
+          </a>
           <BsSendFill className="text-sm font-semibold text-gray-200 " />
         </div>
       </div>

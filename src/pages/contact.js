@@ -5,7 +5,7 @@ function Contact() {
   document.title = "Contact Me";
   return (
     <div>
-      <PageHeader label="Contact" />
+      <PageHeader label="Get in Touch" />
       <div className="p-6">
         <p>Contact</p>
       </div>

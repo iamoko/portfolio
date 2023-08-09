@@ -1,6 +1,6 @@
 import React from "react";
 import PageHeader from "../../components/page-header";
-import { name } from "../../utils/contacts";
+import { personal } from "../../utils/contacts";
 import Services from "./services";
 
 function About() {
@@ -10,7 +10,7 @@ function About() {
     <div>
       <PageHeader label="About Me" />
       <div className="p-6">
-        <p className="text-gray-200">Hello! I'm {name}.</p>
+        <p className="text-gray-200">Hello! I'm {personal.name}.</p>
         <p className={`text-gray-400 ${p_class}`}>
           Back-end & Frond-end developer from Kampala, Uganda. I have rich
           experience in various programing languages, also I am good at Magento.
