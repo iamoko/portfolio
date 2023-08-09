@@ -1,12 +1,22 @@
 import React from "react";
+import Nav from "./nav";
+import Profile from "./profile";
+import Content from "./content";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function Main() {
   return (
-    <div className=" container mx-auto h-screen max-w-[1300px] py-6">
-      <div className="bg-red-500 h-full">
-        <p>Main</p>
+    <Router>
+      <div className="container mx-auto h-screen xl:max-w-[1300px] md:py-6">
+        <div className="h-full md:flex">
+          <div className="flex xl:w-[calc(100%_-_20rem)]  lg:w-[calc(100%_-_10rem)] w-full">
+            <Nav />
+            <Profile />
+          </div>
+          <Content />
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

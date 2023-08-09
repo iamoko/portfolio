@@ -40,7 +40,7 @@ function App() {
             },
             modes: {
               push: {
-                quantity: 20,
+                quantity: 4,
               },
               repulse: {
                 distance: 200,
@@ -74,7 +74,7 @@ function App() {
                 enable: true,
                 area: 800,
               },
-              value: 100,
+              value: 80,
             },
             opacity: {
               value: 0.5,
