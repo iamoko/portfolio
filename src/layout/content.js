@@ -5,6 +5,9 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Contact from "../pages/contact";
 
 import "../assets/style/animation.css";
+import Resume from "../pages/resume";
+import Works from "../pages/works";
+import Products from "../pages/products";
 function Content() {
   let location = useLocation();
 
@@ -30,7 +33,10 @@ function Content() {
         <div className="h-full overflow-y-auto">
           <Routes location={displayLocation}>
             <Route path="/about" element={<About />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/works" element={<Works />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/products" element={<Products />} />
             <Route path="*" element={<About />} />
           </Routes>
         </div>
