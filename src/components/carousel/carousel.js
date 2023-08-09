@@ -3,7 +3,7 @@ import "./Carousel.css";
 
 const Carousel = ({ children }) => {
   const [counter, setCounter] = useState(1);
-  const [pause, setPause] = useState(false);
+  const pause = false;
   const content = children;
 
   const handleNext = () => {
@@ -12,22 +12,6 @@ const Carousel = ({ children }) => {
     } else {
       setCounter(1);
     }
-  };
-
-  const handlePre = () => {
-    if (counter !== 1) {
-      setCounter(counter - 1);
-    } else {
-      setCounter(content.length);
-    }
-  };
-
-  const handlePage = (page) => {
-    setCounter(page);
-  };
-
-  const handleMouse = () => {
-    setPause(!pause);
   };
 
   useEffect(() => {
