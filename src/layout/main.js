@@ -2,8 +2,10 @@ import React from "react";
 
 function Main() {
   return (
-    <div className="bg-red-500">
-      <p>Main</p>
+    <div className=" container mx-auto h-screen max-w-[1300px] py-6">
+      <div className="bg-red-500 h-full">
+        <p>Main</p>
+      </div>
     </div>
   );
 }
