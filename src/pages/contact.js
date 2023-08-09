@@ -2,6 +2,7 @@ import React from "react";
 import PageHeader from "../components/page-header";
 
 function Contact() {
+  document.title = "Contact Me";
   return (
     <div>
       <PageHeader label="Contact" />

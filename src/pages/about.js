@@ -2,6 +2,7 @@ import React from "react";
 import PageHeader from "../components/page-header";
 
 function About() {
+  document.title = "About Me";
   return (
     <div>
       <PageHeader label="About Me" />
