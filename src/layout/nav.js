@@ -17,7 +17,7 @@ function Nav() {
     setActive(location.pathname.substring(1));
   }, [location]);
 
-  const icon_class = `text-xl text-gray-100 group-hover:text-orange-400 transform transition duration-300`;
+  const icon_class = `md:text-xl text-lg text-gray-100 group-hover:text-orange-400 transform transition duration-300`;
   const menu = [
     {
       icon: (
@@ -67,7 +67,7 @@ function Nav() {
   ];
   return (
     <div>
-      <div className="px-4 pt-6 pb-0.5 rounded-sm main mt-4">
+      <div className="px-4 pt-6 pb-0.5 rounded-sm main md:mt-4">
         {_.map(menu, (m, i) => (
           <Link to={`/${m.label.toLowerCase()}`} className="p-0 m-0" key={i}>
             <div
