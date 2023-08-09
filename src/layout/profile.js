@@ -16,7 +16,7 @@ function Profile() {
       <div className="h-[80%]">
         <Carousel>
           {_.map(images, (img, i) => (
-            <div>
+            <div key={i}>
               <img key={i} src={img} alt="img1" className="object-cover" />
             </div>
           ))}
