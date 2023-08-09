@@ -4,9 +4,9 @@ import _ from "lodash";
 
 function Profile() {
   const images = [
-    "https://www.w3schools.com/howto/img_snow_wide.jpg",
-    "https://www.w3schools.com/howto/img_woods_wide.jpg",
-    "https://www.w3schools.com/howto/img_lights_wide.jpg",
+    "https://images4.alphacoders.com/106/106508.jpg",
+    "https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg",
+    "https://4kwallpapers.com/images/wallpapers/sunset-underwater--11436.jpg",
   ];
   return (
     <div
