@@ -20,7 +20,7 @@ function Profile() {
   ];
   return (
     <div
-      className="relative z-10 w-full overflow-hidden border-black md:rounded-md main"
+      className="relative z-10 w-full overflow-hidden border-black md:rounded-md main min-h-[32rem]"
       style={{ boxShadow: "rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px" }}
     >
       <div className="h-[80%]">

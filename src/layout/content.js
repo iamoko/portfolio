@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import About from "../pages/about";
+import About from "../pages/about/about";
 
 import { Routes, Route, useLocation } from "react-router-dom";
 import Contact from "../pages/contact";
@@ -19,7 +19,7 @@ function Content() {
     <div className="w-full md:py-5">
       {/* <div className="h-full main"> */}
       <div
-        className={`${transitionStage} h-full main py-3 pe-3`}
+        className={`${transitionStage} h-full main py-3 pe-3 sm:rounded-e-md`}
         onAnimationEnd={() => {
           if (transitionStage === "fadeOut") {
             setTransistionStage("fadeIn");
